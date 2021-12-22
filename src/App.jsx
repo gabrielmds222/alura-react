@@ -3,7 +3,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Tá rodando</h1>
+      <>
+        <form>
+          <label> Título </label>
+          <input type="text" />
+          <textarea placeholder='Escreva sua nota...'></textarea>
+        </form>
+      </>
     </div>
   );
 }
