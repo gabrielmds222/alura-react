@@ -1,16 +1,17 @@
 import React from 'react';
+import CardNote from './CardNote';
 
-function NoteList () {
+const NoteList = () => {
     return (
         <ul>
-            <li>
-                <section>
-                    <header>
-                        <h3> Titulo </h3>
-                    </header>
-                    <p>Escreva sua nota</p>
-                </section>
-            </li>
+            {Array.of("Trabalho", "Estudos", "Trabalho").map((categoria) => {
+                return (
+                    <li>
+                        <div>{categoria}</div>
+                        <CardNote/>
+                    </li>
+                );
+            })}
         </ul>
     );
 };

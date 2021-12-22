@@ -1,16 +1,13 @@
 import React from 'react';
+import Formulario from './components/Formulario';
 import NoteList from './components/NoteList';
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-        <form>
-          <label> Título </label>
-          <input type="text" />
-          <textarea placeholder='Escreva sua nota...'></textarea>
-          <button>Criar Nota</button>
-        </form>
+        <Formulario/>
         <NoteList/>
     </div>
   );
